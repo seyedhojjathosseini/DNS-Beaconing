@@ -36,13 +36,17 @@ Install dependencies:
 pip install dnspython
 
 🚀 Usage
+
 Basic usage
+
 python dns_beacon.py --domain test.local
 
 Recommended professional setup
+
 python dns_beacon.py --domain test.local --min-interval 10 --max-interval 20 --sub-len 12 --jitter
 
 Full example
+
 python dns_beacon.py \
     --domain soc-test.xyz \
     --min-interval 8 \
@@ -54,6 +58,7 @@ python dns_beacon.py \
     --log-every 1
 
 📌 Parameters
+
 | Parameter        | Description                                             | Default        |
 | ---------------- | ------------------------------------------------------- | -------------- |
 | `--domain`       | Base domain for generating random subdomains (required) | —              |
@@ -66,15 +71,22 @@ python dns_beacon.py \
 | `--log-every`    | Log every N queries                                     | 1              |
 
 📝 Logs
+
 dns_beacon.log
 
 Example log entry:
+
 2025-11-15T12:34:56Z x9a2f3q1.test.local A NXDOMAIN answers=0
 
 
 🧩 Use Cases
+
 SOC visibility testing
+
 DNS detection rule validation
+
 Training analysts on DNS threat hunting
+
 Red Team OpSec-safe beacon simulation
+
 Testing SIEM queries and dashboards
